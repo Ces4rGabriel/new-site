@@ -7,13 +7,12 @@
 html {
     scroll-behavior: smooth;
     width: 100vw;
-    height: 100vh;
+    height: 200vh;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #F7F7F7;
-    height: 200vh;
 }
 
 header {
