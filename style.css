@@ -6,11 +6,7 @@
 
 html {
     scroll-behavior: smooth;
-<<<<<<< HEAD
     width: 90vw;
-=======
-    width: 100vw;
->>>>>>> 17a8cf2023d453c9c14a39fd6a51004b6306fd9a
     height: 200vh;
 }
 
@@ -225,7 +221,7 @@ label {
     flex-direction: column;
     background-color: white;
     width: 50vw;
-    height: 40vh;
+    height: 50vh;
     align-items: center;
     border-radius: 6px;
 }
