@@ -6,7 +6,11 @@
 
 html {
     scroll-behavior: smooth;
+<<<<<<< HEAD
     width: 90vw;
+=======
+    width: 100vw;
+>>>>>>> 17a8cf2023d453c9c14a39fd6a51004b6306fd9a
     height: 200vh;
 }
 
