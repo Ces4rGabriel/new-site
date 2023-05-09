@@ -6,7 +6,6 @@
 
 html {
     scroll-behavior: smooth;
-    width: 90vw;
     height: 200vh;
 }
 
@@ -14,6 +13,197 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: #F7F7F7;
 }
+
+
+
+@media screen and (min-width: 300px) and (max-width:1024px){
+    
+    header {
+        text-align: center;
+    }
+
+    header > h3 {
+        color: #603F97; 
+        font-size: 25px;
+    }
+
+    nav > ul{
+        flex-direction: column;
+        position: fixed;
+        top: 60px;
+        text-align: left;
+    }
+
+    ul > li {
+        margin-right: 0px;
+        margin-bottom: 20px;
+        font-size: 19px;
+    }
+
+
+ #menu-mobile, #close-mobile {
+        display: flex;
+        position: absolute;
+        left: 30px;
+        font-size: 25px;
+        color: black;
+        transition: 0.9s;
+        z-index: 2;
+    } 
+
+    #close-mobile {
+        display: none;
+        transition: 0.9s;
+    }
+
+
+    #menu-mobile:hover, #close-mobile:hover {
+        cursor: pointer;
+    }
+
+    nav {
+        width: 30%;
+        left: 0;
+        background-color: #613f97bd;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        transition: 0.9s;
+        display: none;
+    }
+
+    /*Configurando a tela de login*/
+    #logar {
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 20%;
+        left: 4%;
+        margin: auto;    
+        transition: 0.9s;   
+    }
+
+    #div-login {
+        border: 2px solid black;
+        position: relative;
+        padding: 0px 0px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        width: 90vw;
+        height: 50vh;
+        align-items: center;
+        border-radius: 10px;
+        transition: 0.9s;
+    }
+
+    input {
+        position: relative;
+        margin-left: -150px;
+        margin-bottom: 20px;
+        top: 40px;
+        width: 60vw;
+        height: 40px;
+        border: none;
+        font-size: 15px;
+        font-weight: bold;
+        padding-left: 14px;
+        font-weight: 500;
+        font-family: 'Poppins', sans-serif;
+        background-color: lightgrey;
+        transition: 0.9s;
+        color: black;
+        border-radius: 40px;
+    }
+
+    label {
+        position: relative;
+        transition: 0.9s;
+        top: 40px;
+        font-size: 15px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        margin-left: -150px;
+    }
+
+}
+    
+@media screen and (min-width:1024px) {
+    #menu-mobile, #close-mobile {
+        display: none  !important;
+        transition: 0.9s;
+    }
+
+    header > h3 {
+        position: absolute;
+        left: 20px;
+        margin-left: 20px;
+        color: #603F97; 
+        font-size: 25px;
+    
+    }
+
+    nav {
+        display: flex !important;
+        background-color: white!important;
+        transition: 0s;
+    }
+
+    input {
+        margin-left: -150px;
+        width: 500px;
+        height: 40px;
+        border: none;
+        border-radius: 3px;
+        margin-bottom: 20px;
+        font-size: 15px;
+        font-weight: bold;
+        padding-left: 14px;
+        font-weight: 500;
+        font-family: 'Poppins', sans-serif;
+        background-color: lightgrey;
+        transition: 0.9s;
+        color: black;
+        border-radius: 40px;
+    }
+
+    #logar {
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        display:none;
+        justify-content: center;
+        margin: 20% auto;
+        transition: 0.9s;
+    }
+    
+    label {
+        font-size: 15px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        transition: 0.9s;
+        margin-left: -150px;
+    }
+
+    #div-login {
+        border: 2px solid black;
+        position: relative;
+        padding: 0px 0px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        width: 50vw;
+        height: 40vh;
+        align-items: center;
+        border-radius: 6px;
+        transition: 0.9s;
+    }
+
+    
+}
+
 
 header {
     display: flex;
@@ -27,14 +217,6 @@ header {
     color:black;
 }
 
-header > h3 {
-    position: absolute;
-    left: 20px;
-    margin-left: 20px;
-    color: #603F97; 
-    font-size: 25px;
-
-}
 
 h3 > span {
     color: #3FBEB6;
@@ -129,14 +311,6 @@ li > a[id = "login"] > i{
 }
 
 /*Tela de login*/
-#logar {
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    display:none;
-    justify-content: center;
-    margin-top: 10%;
-}
 
 
 .close {
@@ -145,7 +319,7 @@ li > a[id = "login"] > i{
     right: 8px;
     font-size: 30px;
     color: #603F97;
-    transition: 0.3s;
+    transition: 0.9s;
 }
 
 .close:hover {
@@ -154,35 +328,12 @@ li > a[id = "login"] > i{
     transition: 0.3s;
 }
 
-input {
-    margin-left: -150px;
-    width: 500px;
-    height: 40px;
-    border: none;
-    border-radius: 3px;
-    margin-bottom: 20px;
-    font-size: 15px;
-    font-weight: bold;
-    padding-left: 14px;
-    font-weight: 500;
-    font-family: 'Poppins', sans-serif;
-    background-color: lightgrey;
-    transition: 0.5s;
-    color: black;
-    border-radius: 40px;
-}
 
 input:focus {
     background-color: white;
     transition: 0.5s;
 }
 
-label {
-    font-size: 15px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    margin-left: -150px;
-}
 
 
 #div-login > a {
@@ -197,7 +348,7 @@ label {
     margin-left: 20px;
     font-size: 15px;
     font-weight: bold;
-    transition: background-color 0.5s;
+    transition: background-color 0.9s;
 }
 
 #form01 {
@@ -206,24 +357,11 @@ label {
     flex-direction: column;
     bottom: 100px;
     left:200px;
+    transition: 0.9s;
 }
 
 label {
     color: black;
-}
-
-
-#div-login {
-    border: 2px solid black;
-    position: relative;
-    padding: 0px 0px 0px 20px;
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    width: 50vw;
-    height: 40vh;
-    align-items: center;
-    border-radius: 6px;
 }
 
 section {

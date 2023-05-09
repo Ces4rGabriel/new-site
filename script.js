@@ -3,30 +3,12 @@
 let body = document.querySelector('body');
 let posAntiga = 0;
 
-
-/*function scrollFunction() {
-    let div = document.getElementById('to-top');
-
-    window.alert("Posição scrol bar: " + html.scrollTop);
-
-    if(html.scrollTop > 0)  
-    {
-        div.setAttribute('class', 'scrolled');
-    }else
-    {
-        div.setAttribute('class', 'noscrolled');
-    }
-
-    
-};
-
-html.onscroll = scrollFunction();*/
-
 //fazer a barra crescer semopre que o botão crecer
 function highWidth(){
     let scrolVertical = document.querySelector('.scroll-vertical');
     scrolVertical.style.height = "5px";
     scrolVertical.style.backgroundColor = "#603F97";
+    buttonClose();
 
     let html = document.documentElement;
     let body = document.body;
@@ -47,3 +29,31 @@ function telaLogin(){
     telaLogin.style.transition = "0.7s";
 }
 
+function menuNavMobile(){
+    let nav = document.querySelector('nav');
+    let tresBarras = document.querySelector('#menu-mobile');
+    let closeMobile = document.querySelector('#close-mobile');
+    let logar = document.querySelector('#logar');
+    logar.style.display = "none";
+    nav.style.display = "flex";
+    nav.style.transition = "0.9s";
+    tresBarras.style.display = "none";
+    closeMobile.style.display = "flex";
+}
+
+
+function buttonClose(){
+    let tresBarras = document.querySelector('#menu-mobile');
+    let closeMobile = document.querySelector('#close-mobile');
+    let nav = document.querySelector('nav');
+    let logar = document.querySelector('#logar');
+    logar.style.display = "none";
+    nav.style.display = "none";
+    tresBarras.style.display = "flex";
+    closeMobile.style.display = "none";
+}
+
+function enviarDados(){
+    let login = document.querySelector('#logar');
+    login.style.display = "none";
+}
